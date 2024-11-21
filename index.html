@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Primary Meta Tags -->
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/39514595?s=32"
+    />
+    <title>Ray C – Creating fun with code</title>
+    <meta name="title" content="Ray C – Creating fun with code" />
+    <meta name="description" content="Ray's portfolio website" />
+    <meta
+      name="keywords"
+      content="design,programming,develop,developer,development,responsive,portfolio,front-end,html,css,js,javascript,react,vue,solidjs,svelte,alpinejs,framework"
+    />
+    <meta name="author" content="Ray C" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rayc.dev/" />
+    <meta property="og:title" content="Ray C – Creating fun with code" />
+    <meta property="og:description" content="Ray's portfolio website" />
+    <meta property="og:image" content="/assets/images/cover.webp" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rayc.dev/" />
+    <meta property="twitter:title" content="Ray C – Creating fun with code" />
+    <meta property="twitter:description" content="Ray's portfolio website" />
+    <meta property="twitter:image" content="/assets/images/cover.webp" />
+    <!-- serif fonts: Merriweather & Playfair Display -->
+    <link rel="stylesheet" href="/src/font-face.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/src/modern-reset.css" />
+    <link rel="stylesheet" href="/src/common.css" />
+    <link rel="stylesheet" href="/home/style.css" />
+  </head>
+  <body style="overflow: hidden">
+    <header>
+      <nav>
+        <div id="date">November 13, 2024</div>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/rayc2045"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              ABOUT ME
+            </a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mobile">
+        <div class="round noise shadow gray">
+          <img
+            src="https://avatars.githubusercontent.com/u/39514595"
+            alt="avatar"
+            loading="lazy"
+          />
+        </div>
+        <h1>Ray Chang</h1>
+        <p>
+          Passionate about web dev and design, and devoted to programming as
+          elegant as swinging a sword.
+        </p>
+      </section>
+      <div class="round yellow noise-intense" parallax data-velocity="12"></div>
+      <div
+        class="round orange-red noise-intense"
+        parallax
+        data-velocity="23"
+      ></div>
+      <picture class="building">
+        <source srcset="/assets/images/building.avif" type="image/avif" />
+        <source srcset="/assets/images/building.webp" type="image/webp" />
+        <img src="/assets/images/building.png" alt="building" />
+      </picture>
+      <h1 parallax data-velocity="-5">Ray Chang Space</h1>
+      <section class="left" parallax data-velocity="2">
+        <h2>
+          <small>The Meaning of</small>
+          Design
+        </h2>
+        <p>
+          The word design is derived from the Latin "Designare", which means
+          idea or plan. The simplest definition of design is a purposeful
+          creative act. Especially for designer Feng Yu, designing is to
+          discover and create value. Three things: "Speaking clearly", "solving
+          problems", and "matching functionality" can be said the most common
+          use in design.
+        </p>
+      </section>
+      <section class="right" parallax data-velocity="2">
+        <h2>
+          <small>Speaking of</small>
+          Programming
+        </h2>
+        <p>
+          When a problem is found, after thinking, the idea of solving the
+          problem is finally expressed in a way that the computer can
+          understand, that is, programming. The reason web technology develops
+          so fast is that we redefine the problems over and over again. Learning
+          programming teaches us how to think.
+        </p>
+      </section>
+    </main>
+
+    <section id="portfolio">
+      <article>
+        <div>
+          <a
+            href="https://pokedex-list.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/pokédex.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/pokédex.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/pokédex.jpg"
+                alt="pokédex"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">09</span>
+            <h3>Pokédex</h3>
+          </header>
+          <p>
+            Pokédex made with Vue.js and PokeAPI |
+            <a
+              href="https://github.com/rayc2045/pokedex"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://github.com/rayc2045/zipcy-collector"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/zipcy_collector.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/zipcy_collector.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/zipcy_collector.jpg"
+                alt="zipcy_collector"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">08</span>
+            <h3>Zipcy Collector</h3>
+          </header>
+          <p>
+            Automatically download 8.9k Zipcy's SuperNormal NFT images |
+            <a
+              href="https://github.com/rayc2045/zipcy-collector"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://mondrian-art.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/infinite_mondrian_art.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/infinite_mondrian_art.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/infinite_mondrian_art.jpg"
+                alt="infinite_mondrian_art"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">07</span>
+            <h3>Infinite Mondrian Art</h3>
+          </header>
+          <p>
+            Generative art made with JavaScript |
+            <a
+              href="https://github.com/rayc2045/infinite-mondrian-art"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://color-names.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/html_reserved_colors.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/html_reserved_colors.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/html_reserved_colors.jpg"
+                alt="html_reserved_colors"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">06</span>
+            <h3>HTML Reserved Colors</h3>
+          </header>
+          <p>
+            Pick colors you like with one click |
+            <a
+              href="https://github.com/rayc2045/html-reserved-colors"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://vuejs-theater.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="
+                  /assets/images/portfolio/horizontal_scrolling_theater.avif
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  /assets/images/portfolio/horizontal_scrolling_theater.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/horizontal_scrolling_theater.jpg"
+                alt="horizontal_scrolling_theater"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">05</span>
+            <h3>Horizontal Scrolling Theater</h3>
+          </header>
+          <p>
+            Enjoy the online movie shopping |
+            <a
+              href="https://github.com/rayc2045/horizontal-scrolling-theater"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://rayc2045.github.io/vanilla-calculator/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/vanilla_calculator.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/vanilla_calculator.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/vanilla_calculator.jpg"
+                alt="vanilla_calculator"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">04</span>
+            <h3>Vanilla Calculator</h3>
+          </header>
+          <p>
+            Elegantly shows the result immediately |
+            <a
+              href="https://github.com/rayc2045/vanilla-calculator"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://chrome.google.com/webstore/detail/draggable-to-do-list%EF%BD%9C%E5%8F%AF%E6%8B%96%E6%9B%B3%E7%9A%84/pndehpgkgbajinooeiebnjikfdfgoogi"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/draggable_to-do_list.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/draggable_to-do_list.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/draggable_to-do_list.jpg"
+                alt="draggable_to-do_list"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">03</span>
+            <h3>Draggable To-do List</h3>
+          </header>
+          <p>
+            Featured by autosave and markdown support |
+            <a
+              href="https://github.com/rayc2045/draggable-todoList"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://dribbble.com/raychangdesign"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/dribbble_works.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/dribbble_works.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/dribbble_works.jpg"
+                alt="dribbble_works"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">02</span>
+            <h3>Dribbble Works</h3>
+          </header>
+          <p>
+            See my design works on Dribbble |
+            <a
+              href="https://dribbble.com/raychangdesign"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              learn more…
+            </a>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            href="https://vocus.cc/user/@raychang"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <picture class="noise gray">
+              <source
+                srcset="/assets/images/portfolio/blog_posts.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="/assets/images/portfolio/blog_posts.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/portfolio/blog_posts.jpg"
+                alt="blog_posts"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+        </div>
+        <div>
+          <header>
+            <span class="index">01</span>
+            <h3>Blog Posts</h3>
+          </header>
+          <p>
+            Read my latest article |
+            <a
+              href="https://vocus.cc/user/@raychang"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              learn more…
+            </a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact">
+      <section>
+        <div class="round noise shadow gray">
+          <img
+            src="https://avatars.githubusercontent.com/u/39514595"
+            alt="avatar"
+          />
+        </div>
+      </section>
+      <section id="form-container">
+        <header>
+          <h1>Say Hello</h1>
+        </header>
+        <p class="note">
+          <span class="symbol" aria-hidden="true">*</span>
+          <strong>is a required input.</strong>
+        </p>
+        <form name="contact" method="POST" netlify>
+          <fieldset>
+            <legend>Name</legend>
+            <label for="name">
+              <span class="sr-only">Name</span>
+              <input id="name" name="name" type="text" class="required" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Company</legend>
+            <label for="company">
+              <span class="sr-only">Company</span>
+              <input id="company" name="company" type="text" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Email</legend>
+            <label for="email">
+              <span class="sr-only">Email</span>
+              <input id="email" name="email" type="email" class="required" />
+            </label>
+            <!-- <datalist id="defaultEmails">
+              <option value="@gmail.com"></option>
+              <option value="@yahoo.com.tw"></option>
+            </datalist> -->
+          </fieldset>
+          <fieldset>
+            <legend>Subject</legend>
+            <label for="subject">
+              <span class="sr-only">Subject</span>
+              <input id="subject" name="subject" type="text" class="required" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Message</legend>
+            <label for="message">
+              <span class="sr-only">Message</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              class="required"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <section id="success-message" role="alert" aria-live="polite" hidden>
+        <h3>Thank you for writing to me.</h3>
+        <p>The message is already sent.</p>
+      </section>
+    </section>
+
+    <footer>
+      <p>
+        <span class="copy-right">&copy;</span>
+        <span id="year"></span>
+        Made with <span class="heart">❤️</span> by
+        <a
+          href="https://github.com/rayc2045"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Ray C
+        </a>
+      </p>
+    </footer>
+
+    <div
+      id="loader"
+      style="
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100dvw;
+        height: 100dvh;
+        overflow: hidden;
+        background-color: #333;
+      "
+    >
+      <div class="gif">
+        <img src="/assets/images/loader.gif" />
+      </div>
+    </div>
+
+    <script src="/src/utils.js"></script>
+    <script src="/home/script.js"></script>
+  </body>
+</html>

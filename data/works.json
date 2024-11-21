@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Pokédex",
+    "description": "Pokédex made with Vue.js and PokeAPI",
+    "link": {
+      "website": "https://pokedex-list.netlify.app/",
+      "github": "https://github.com/rayc2045/pokedex"
+    }
+  },
+  {
+    "title": "Zipcy Collector",
+    "description": "Automatically download 8.9k Zipcy's SuperNormal NFT images",
+    "link": {
+      "website": "https://github.com/rayc2045/zipcy-collector",
+      "github": "https://github.com/rayc2045/zipcy-collector"
+    }
+  },
+  {
+    "title": "Infinite Mondrian Art",
+    "description": "Generative art made with JavaScript",
+    "link": {
+      "website": "https://mondrian-art.netlify.app/",
+      "github": "https://github.com/rayc2045/infinite-mondrian-art"
+    }
+  },
+  {
+    "title": "HTML Reserved Colors",
+    "description": "Pick colors you like with one click",
+    "link": {
+      "website": "https://color-names.netlify.app/",
+      "github": "https://github.com/rayc2045/html-reserved-colors"
+    }
+  },
+  {
+    "title": "Horizontal Scrolling Theater",
+    "description": "Enjoy the online movie shopping",
+    "link": {
+      "website": "https://vuejs-theater.netlify.app/",
+      "github": "https://github.com/rayc2045/horizontal-scrolling-theater"
+    }
+  },
+  {
+    "title": "Vanilla Calculator",
+    "description": "Elegantly shows the result immediately",
+    "link": {
+      "website": "https://rayc2045.github.io/vanilla-calculator/",
+      "github": "https://github.com/rayc2045/vanilla-calculator"
+    }
+  },
+  {
+    "title": "Draggable To-do List",
+    "description": "Featured by autosave and markdown support",
+    "link": {
+      "website": "https://chrome.google.com/webstore/detail/draggable-to-do-list%EF%BD%9C%E5%8F%AF%E6%8B%96%E6%9B%B3%E7%9A%84/pndehpgkgbajinooeiebnjikfdfgoogi",
+      "github": "https://github.com/rayc2045/draggable-todoList"
+    }
+  },
+  {
+    "title": "Dribbble Works",
+    "description": "See my design works on Dribbble",
+    "link": {
+      "website": "https://dribbble.com/raychangdesign"
+    }
+  },
+  {
+    "title": "Blog Posts",
+    "description": "Read my latest article",
+    "link": {
+      "website": "https://vocus.cc/user/@raychang"
+    }
+  }
+]

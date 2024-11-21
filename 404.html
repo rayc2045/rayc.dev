@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Primary Meta Tags -->
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/39514595?s=32"
+    />
+    <title>Page Not Found</title>
+    <meta name="title" content="Page Not Found" />
+    <meta
+      name="description"
+      content="The page you are looking for doesn't exist."
+    />
+    <meta
+      name="keywords"
+      content="design,programming,develop,developer,development,responsive,portfolio,front-end,html,css,js,javascript,react,vue,solidjs,svelte,alpinejs,framework"
+    />
+    <meta name="author" content="Ray C" />
+    <!-- <meta http-equiv="refresh" content="3; url=/" /> -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://rayc.dev/404" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rayc.dev/" />
+    <meta property="og:title" content="Page Not Found" />
+    <meta
+      property="og:description"
+      content="The page you are looking for doesn't exist."
+    />
+    <meta property="og:image" content="/assets/images/404.webp" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rayc.dev/" />
+    <meta property="twitter:title" content="Page Not Found" />
+    <meta
+      property="twitter:description"
+      content="The page you are looking for doesn't exist."
+    />
+    <meta property="twitter:image" content="/assets/images/404.webp" />
+    <!-- serif fonts: Merriweather & Playfair Display -->
+    <link rel="stylesheet" href="/src/font-face.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/src/modern-reset.css" />
+    <link rel="stylesheet" href="/src/common.css" />
+    <style>
+      body,
+      main {
+        display: grid;
+        place-content: center;
+        justify-items: center;
+      }
+
+      body {
+        height: 100dvh;
+        user-select: none;
+      }
+
+      picture {
+        width: 90dvw;
+        margin-bottom: 0.5em;
+        @media (width >= 640px) {
+          width: 80dvw;
+        }
+        @media (width >= 768px) {
+          width: 70dvw;
+        }
+        @media (width >= 1024px) {
+          width: 60dvw;
+        }
+      }
+
+      h1 {
+        font-size: 1em;
+        font-weight: 700;
+        color: dimgray;
+        @media (width >= 640px) {
+          font-size: 2.5em;
+        }
+        @media (width >= 768px) {
+          font-size: 2em;
+        }
+        @media (width >= 1024px) {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <picture>
+        <source srcset="/assets/images/404.avif" type="image/avif" />
+        <source srcset="/assets/images/404.webp" type="image/webp" />
+        <img src="/assets/images/404.png" alt="pokédex" loading="lazy" />
+      </picture>
+      <h1>
+        Oops! Looks like you're lost : (<br />The location couldn't be found.
+      </h1>
+    </main>
+
+    <script src="/src/utils.js"></script>
+    <script>
+      const { hostname } = location,
+        preventDefault = (e) => e.preventDefault();
+      document.addEventListener("selectstart", preventDefault);
+      document.addEventListener("dragstart", preventDefault);
+      document.addEventListener("contextmenu", preventDefault);
+
+      if (hostname === "127.0.0.1" || hostname === "localhost") {
+        const deviceSize = document.createElement("div");
+        setStyle(deviceSize, {
+          position: "fixed",
+          left: "10px",
+          top: "10px",
+          fontFamily: "monospace",
+          fontSize: "24px",
+          fontWeight: "700",
+          color: "royalblue",
+          pointerEvents: "none",
+        });
+        const updateDeviceSize = () => {
+          deviceSize.textContent = `${window.innerWidth}x${window.innerHeight}`;
+        };
+        updateDeviceSize();
+        window.addEventListener("resize", updateDeviceSize);
+        document.body.appendChild(deviceSize);
+      } else {
+        window.addEventListener("load", () =>
+          setTimeout(() => (location.href = "/"), 2500),
+        );
+      }
+    </script>
+  </body>
+</html>
