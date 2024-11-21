@@ -204,7 +204,7 @@ form {
     border-bottom: var(--border);
     cursor: auto;
   }
-  textarea {
+  & textarea {
     overflow: hidden;
     resize: none;
   }
@@ -277,11 +277,11 @@ footer {
   & a {
     color: var(--black);
   }
-  .copy-right {
+  & .copy-right {
     font-size: 1.05em;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .heart {
+  & .heart {
     display: inline-block;
     transform: translateY(100%);
     opacity: 0;
@@ -322,6 +322,9 @@ footer {
     width: 75%;
     @media (width >= 768px) {
       width: 50%;
+    }
+    > img {
+      margin-inline: auto;
     }
   }
 }
