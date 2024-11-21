@@ -255,17 +255,17 @@ main {
     }
   }
   > section#success-message {
-    display: grid;
-    place-content: center;
-    justify-items: center;
-    gap: 1em;
     padding-block: 14em;
+    text-align: center;
     @media (width >= 640px) {
       padding-block: 11em;
       font-size: 1.35em;
     }
     &[hidden] {
       display: none;
+    }
+    > p {
+      margin-top: 1em;
     }
   }
 }

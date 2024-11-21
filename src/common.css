@@ -324,7 +324,7 @@ footer {
       width: 50%;
     }
     > img {
-      margin-inline: auto;
+      width: 100%;
     }
   }
 }
