@@ -16,5 +16,6 @@
 - 將 PNG 圖片壓縮成較小的 AVIF 與 WebP 格式，以及將 JSON 作品資料轉變為 HTML，而非透過 JavaScript 動態載入，減少網頁載入時間。
 - 在網站載入完成前限制滾動，封鎖右鍵選單和圖片拖移等影響網站美感的事件，並加入點擊網頁任何地方產生漣漪的動畫效果，增強使用者與網站之間的互動體驗。
 - 使用淺米色 `#eee` 和 [base64 躁點](http://noisepng.com/) 作為背景增添質感，讓瀏覽網頁時更有閱讀紙張的感覺。
-- Loader 利用兩個不同動畫持續時間的上拉和下拉動畫，以及透過將部分元素綁定滾動事件和元素樣式 `transform: translateY()`，搭配設置 [Cubic Bezier](https://cubic-bezier.com 貝茲曲線參數調整動畫節奏，達成順暢自然的 Parallax 視差效果，另再透過 `requestAnimationFrame` 優化效能。
+- Loader 利用兩個不同動畫持續時間的上拉和下拉動畫，以及透過將部分元素綁定滾動事件和元素樣式 `transform: translateY()`，搭配設置 [Cubic Bezier](https://cubic-bezier.com) 貝茲曲線參數調整動畫節奏，達成順暢自然的 Parallax 視差效果，另再透過 `requestAnimationFrame` 優化效能。
 - 使用比滾動事件更具效能的 `IntersectionObserver` 監看多個元素是否進入或離開畫面以觸發動畫或漸變效果。
+- 聯絡表單結合 [Netlify Forms](https://www.netlify.com/platform/core/forms/)，自動過濾騷擾訊息及 Gmail 來信通知。
