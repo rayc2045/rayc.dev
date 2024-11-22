@@ -128,7 +128,15 @@ const loader = select("#loader");
 loader.addEventListener("animationend", function () {
   this.remove();
   document.body.removeAttribute("style");
-  document.body.addEventListener("pointerdown", appendRipple);
+  document.body.addEventListener("pointerdown", (e) => {
+    if (
+      !e.target.closest("input") &&
+      !e.target.closest("textarea") &&
+      !e.target.closest("button") &&
+      !e.target.closest("a")
+    )
+      appendRipple(e);
+  });
 });
 window.addEventListener("load", () => {
   scrollTo({ top: 0 });
