@@ -23,7 +23,8 @@ watchElement([...selectAll(".gray"), select("footer .heart")], (entry) => {
     : entry.target.classList.remove("animate");
 });
 
-if (!select("#portfolio").innerHTML.trim())
+const portfolio = select("#portfolio");
+if (!portfolio.innerHTML.trim())
   (async () => {
     const works = await loadData("/data/works.json"),
       worksHTML = works
@@ -61,7 +62,9 @@ if (!select("#portfolio").innerHTML.trim())
           `.trim();
         })
         .join("");
-    log(worksHTML);
+    portfolio.addEventListener("pointerdown", () => {
+      navigator.clipboard.writeText(worksHTML);
+    });
   })();
 
 const form = select("form"),
