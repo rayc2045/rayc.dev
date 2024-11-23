@@ -97,12 +97,13 @@ function scrollTranslateY(el) {
 function appendRipple(e, option = {}) {
   const { target = document.body, duration = 1.5 } = option,
     ripple = document.createElement("div"),
-    offset = window.innerWidth * (window.innerWidth < 640 ? 0.5 : 0.25);
+    scale = window.innerWidth < 640 ? 100 : 50,
+    offset = (window.innerWidth * scale) / 2 / 100;
   setStyle(ripple, {
     position: "fixed",
     left: `${e.clientX - offset}px`,
     top: `${e.clientY - offset}px`,
-    width: window.innerWidth < 640 ? "100vw" : "50vw",
+    width: `${scale}vw`,
     aspectRatio: "1 / 1",
     borderRadius: "50%",
     transformOrigin: "50% 50%",
