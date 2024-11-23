@@ -26,45 +26,46 @@ watchElement([...selectAll(".gray"), select("footer .heart")], (entry) => {
 const portfolio = select("#portfolio");
 if (!portfolio.innerHTML.trim())
   (async () => {
-    const works = await loadData("/data/works.json"),
-      worksHTML = works
-        .map((work, idx) => {
-          const { title, description, link } = work,
-            imageName = title.toLowerCase().replaceAll(" ", "_");
-          return `
-            <article>
-              <div>
-                <a
-                  href="${link.website}"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <picture class="noise gray">
-                    <source srcset="/assets/images/portfolio/${imageName}.avif" type="image/avif">
-                    <source srcset="/assets/images/portfolio/${imageName}.webp" type="image/webp">
-                    <img src="/assets/images/portfolio/${imageName}.jpg" alt="${imageName}" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div>
-                <header>
-                  <span class="index">${String(works.length - idx).padStart(2, "0")}</span>
-                  <h3>${title}</h3>
-                </header>
-                <p>
-                  ${description} |
-                  <a href="${link.github || link.website}" target="_blank" rel="noreferrer noopener">
-                    ${link.github ? `GitHub` : `learn more…`}
-                  </a>
-                </p>
-              </div>
-            </article>
-          `.trim();
-        })
-        .join("");
-    portfolio.addEventListener("pointerdown", () => {
-      navigator.clipboard.writeText(worksHTML);
-    });
+    const works = await loadData("/data/works.json");
+    portfolio.innerHTML = works
+      .map((work, idx) => {
+        const { title, description, link } = work,
+          imageName = title.toLowerCase().replaceAll(" ", "_");
+        return `
+          <article>
+            <div>
+              <a
+                href="${link.website}"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="View ${title} project"
+              >
+                <picture class="noise gray">
+                  <source srcset="/assets/images/portfolio/${imageName}.avif" type="image/avif">
+                  <source srcset="/assets/images/portfolio/${imageName}.webp" type="image/webp">
+                  <img src="/assets/images/portfolio/${imageName}.jpg" alt="${imageName}" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div>
+              <header>
+                <span class="index">${String(works.length - idx).padStart(2, "0")}</span>
+                <h3>${title}</h3>
+              </header>
+              <p>${description} | ${
+                link.github
+                  ? `<a href="${link.github}" target="_blank" rel="noreferrer noopener">
+                    view on GitHub
+                  </a>`
+                  : `<a href="${link.website}" target="_blank" rel="noreferrer noopener">
+                    visit website
+                  </a>`
+              }</p>
+            </div>
+          </article>
+        `.trim();
+      })
+      .join("");
   })();
 
 const form = select("form"),
