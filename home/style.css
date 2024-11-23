@@ -139,7 +139,6 @@ main {
       }
       & p {
         margin-top: 0.5em;
-        padding-right: 1em;
         font-weight: 700;
         color: gray;
       }
@@ -160,6 +159,7 @@ main {
       }
       > div:last-of-type {
         flex: 1;
+        padding-inline: 0;
         > header {
           > .index {
             display: block;
@@ -175,6 +175,7 @@ main {
           }
         }
         & p {
+          padding-right: 1em;
           opacity: 0.9;
           font-size: 1.15em;
           font-weight: 900;
