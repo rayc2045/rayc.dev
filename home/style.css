@@ -127,9 +127,8 @@ main {
       background-color: lightgray;
     }
     > div:last-of-type {
-      padding-inline: 0.25em;
+      padding-inline: 0.5em;
       > header {
-        margin-bottom: 0.25em;
         > .index {
           display: none;
         }
@@ -139,6 +138,8 @@ main {
         }
       }
       & p {
+        margin-top: 0.5em;
+        padding-right: 1em;
         font-weight: 700;
         color: gray;
       }
@@ -159,7 +160,6 @@ main {
       }
       > div:last-of-type {
         flex: 1;
-        margin-top: 1.5em;
         > header {
           > .index {
             display: block;
