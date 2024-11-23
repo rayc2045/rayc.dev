@@ -57,7 +57,7 @@ main {
       position: absolute;
       &.yellow {
         left: 13.3em;
-        top: 25.3em;
+        top: 25em;
         width: 15.6em;
         background-color: var(--yellow);
       }
@@ -87,7 +87,7 @@ main {
     }
     > section {
       position: absolute;
-      top: 28.5em;
+      top: 27.5em;
       width: 17.8em;
       &.left {
         left: 0;
@@ -108,6 +108,7 @@ main {
         }
       }
       & p {
+        padding-right: 2ch;
         font-size: 0.9em;
       }
     }
