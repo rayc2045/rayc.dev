@@ -219,7 +219,9 @@ form {
 }
 
 html {
+  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
   font-size: 4.25vw;
+  letter-spacing: 0.5px;
   scrollbar-width: none;
   @media (width >= 640px) {
     font-size: 1.25vw;
@@ -228,8 +230,6 @@ html {
 
 body {
   padding: 1.5em;
-  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
-  letter-spacing: 0.5px;
   color: var(--black);
   background-image: var(--noise);
   background-color: var(--white);
