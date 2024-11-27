@@ -25,12 +25,11 @@ main {
     @media (width >= 640px) {
       display: none;
     }
-    padding-inline: 2em;
     padding-top: 0;
     padding-bottom: 1.5em;
     > div:has(img) {
       margin-inline: auto;
-      width: 95%;
+      width: 76.5%;
     }
     > h1 {
       margin-block: 0.1em;
@@ -41,9 +40,9 @@ main {
       text-align: center;
     }
     > p {
+      padding-inline: 8%;
       font-weight: 900;
       text-align: center;
-      line-height: 1.4;
       color: gray;
     }
   }
