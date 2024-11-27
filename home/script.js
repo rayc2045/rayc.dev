@@ -17,11 +17,6 @@ const time = new Time(),
 updateTime();
 
 selectAll("[parallax]").forEach((el) => scrollTranslateY(el));
-watchElement([...selectAll(".gray"), select("footer .heart")], (entry) => {
-  entry.isIntersecting
-    ? entry.target.classList.add("animate")
-    : entry.target.classList.remove("animate");
-});
 
 const portfolio = select("#portfolio");
 if (!portfolio.innerHTML.trim())
@@ -131,6 +126,11 @@ watchElement("#contact", (entry) => {
 const loader = select("#loader");
 loader.addEventListener("animationend", function () {
   this.remove();
+  watchElement([...selectAll(".gray"), select("footer .heart")], (entry) => {
+    entry.isIntersecting
+      ? entry.target.classList.add("animate")
+      : entry.target.classList.remove("animate");
+  });
   document.body.removeAttribute("style");
   document.body.addEventListener("pointerdown", (e) => {
     if (
