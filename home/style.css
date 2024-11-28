@@ -40,7 +40,7 @@ main {
       text-align: center;
     }
     > p {
-      padding-inline: 8%;
+      padding-inline: 2.25ch;
       font-weight: 900;
       text-align: center;
       color: gray;
@@ -127,7 +127,7 @@ main {
       background-color: lightgray;
     }
     > div:last-of-type {
-      padding-inline: 0.5em;
+      padding-inline: 0.75ch;
       > header {
         > .index {
           display: none;
