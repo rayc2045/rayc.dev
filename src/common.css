@@ -320,7 +320,7 @@ footer {
   }
   > .gif {
     width: 75%;
-    @media (width >= 768px) {
+    @media (width >= 640px) {
       width: 50%;
     }
     > img {
