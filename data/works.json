@@ -4,15 +4,15 @@
     "description": "An interactive Pokédex application powered by Vue.js and the PokeAPI, allowing users to search, explore, and view detailed Pokémon data.",
     "link": {
       "website": "https://pokedex-list.netlify.app/",
-      "github": "https://github.com/rayc2045/pokedex"
+      "github": "https://github.com/rayc2045/pokedex?tab=readme-ov-file#readme"
     }
   },
   {
     "title": "Zipcy Collector",
     "description": "A tool that automates the bulk download of 8.9k Zipcy’s SuperNormal NFT images, streamlining NFT management for collectors.",
     "link": {
-      "website": "https://github.com/rayc2045/zipcy-collector",
-      "github": "https://github.com/rayc2045/zipcy-collector"
+      "website": "https://github.com/rayc2045/zipcy-collector?tab=readme-ov-file#readme",
+      "github": "https://github.com/rayc2045/zipcy-collector?tab=readme-ov-file#readme"
     }
   },
   {
@@ -20,7 +20,7 @@
     "description": "A JavaScript-powered generative art project inspired by Piet Mondrian, creating infinite unique compositions with bold lines and colors.",
     "link": {
       "website": "https://mondrian-art.netlify.app/",
-      "github": "https://github.com/rayc2045/infinite-mondrian-art"
+      "github": "https://github.com/rayc2045/infinite-mondrian-art?tab=readme-ov-file#readme"
     }
   },
   {
@@ -28,7 +28,7 @@
     "description": "A simple yet powerful color picker that lets users instantly select and copy HTML reserved colors with a single click.",
     "link": {
       "website": "https://color-names.netlify.app/",
-      "github": "https://github.com/rayc2045/html-reserved-colors"
+      "github": "https://github.com/rayc2045/html-reserved-colors?tab=readme-ov-file#readme"
     }
   },
   {
@@ -36,7 +36,7 @@
     "description": "A modern Vue.js-based movie shopping website with an innovative horizontal scrolling interface for browsing and purchasing films.",
     "link": {
       "website": "https://vuejs-theater.netlify.app/",
-      "github": "https://github.com/rayc2045/horizontal-scrolling-theater"
+      "github": "https://github.com/rayc2045/horizontal-scrolling-theater?tab=readme-ov-file#readme"
     }
   },
   {
@@ -44,7 +44,7 @@
     "description": "An elegant and minimalistic calculator built with vanilla JavaScript, delivering instant results with every input.",
     "link": {
       "website": "https://rayc2045.github.io/vanilla-calculator/",
-      "github": "https://github.com/rayc2045/vanilla-calculator"
+      "github": "https://github.com/rayc2045/vanilla-calculator?tab=readme-ov-file#readme"
     }
   },
   {
@@ -52,7 +52,7 @@
     "description": "A productivity-focused to-do list featuring drag-and-drop reordering, autosave functionality, and markdown support for note-taking.",
     "link": {
       "website": "https://chrome.google.com/webstore/detail/draggable-to-do-list%EF%BD%9C%E5%8F%AF%E6%8B%96%E6%9B%B3%E7%9A%84/pndehpgkgbajinooeiebnjikfdfgoogi",
-      "github": "https://github.com/rayc2045/draggable-todoList"
+      "github": "https://github.com/rayc2045/draggable-todoList?tab=readme-ov-file#readme"
     }
   },
   {

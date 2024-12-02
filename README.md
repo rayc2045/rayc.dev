@@ -1,6 +1,6 @@
 # rayc.dev｜不依賴套件和框架的作品集網站
 
-[![cover](/assets/images/cover.png)](https://rayc.dev)
+[![cover](/assets/images/cover.png)](https://rayc2045.netlify.app/)
 
 ### 專案簡介
 

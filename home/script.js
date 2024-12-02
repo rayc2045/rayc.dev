@@ -36,9 +36,9 @@ if (!portfolio.innerHTML.trim())
                 aria-label="View ${title} project"
               >
                 <picture class="noise gray">
-                  <source srcset="/assets/images/portfolio/${imageName}.avif" type="image/avif">
-                  <source srcset="/assets/images/portfolio/${imageName}.webp" type="image/webp">
-                  <img src="/assets/images/portfolio/${imageName}.jpg" alt="${imageName}" loading="lazy">
+                  <source srcset="./assets/images/portfolio/${imageName}.avif" type="image/avif">
+                  <source srcset="./assets/images/portfolio/${imageName}.webp" type="image/webp">
+                  <img src="./assets/images/portfolio/${imageName}.jpg" alt="${imageName}" loading="lazy">
                 </picture>
               </a>
             </div>
